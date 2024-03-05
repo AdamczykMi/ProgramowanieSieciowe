@@ -17,14 +17,12 @@ int main() {
 
     // Wczytywanie liczb do tablicy
     while (wczytane < 50) {
-        int liczba;
-        scanf("%d", &liczba);
+        scanf("%d", &liczby[wczytane]);
 
-        if (liczba == 0) {
+        if (liczby[wczytane] == 0) {
             break;
         }
 
-        liczby[wczytane] = liczba;
         wczytane++;
     }
 

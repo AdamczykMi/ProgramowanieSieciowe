@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void drukuj_alt(int *tablica, int liczba_elementow) {
-    printf("Liczby większe od 10 i mniejsze od 100:\n");
+    printf("Liczby wieksze od 10 i mniejsze od 100:\n");
 
     // Ustawienie wskaźnika na początek tablicy
     int *ptr = tablica;
@@ -23,14 +23,12 @@ int main() {
 
     // Wczytywanie liczb do tablicy
     while (wczytane < 50) {
-        int liczba;
-        scanf("%d", &liczba);
+        scanf("%d", &liczby[wczytane]);
 
-        if (liczba == 0) {
+        if (liczby[wczytane] == 0) {
             break;
         }
 
-        liczby[wczytane] = liczba;
         wczytane++;
     }
 
