@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <stdio.h>
 
 bool printable_buf(const void *buf, int len) {
     const unsigned char *ptr = (const unsigned char *) buf; // Rzutowanie wskaźnika na unsigned char
@@ -9,8 +10,6 @@ bool printable_buf(const void *buf, int len) {
     }
     return true; // Jeśli wszystkie znaki są drukowalne, zwraca true
 }
-
-#include <stdio.h>
 
 int main() {
     char buf1[] = "Hello, World!"; // Znakowe bufor o poprawnych znakach
