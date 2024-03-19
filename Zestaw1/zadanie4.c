@@ -1,4 +1,5 @@
 #include <stdbool.h>
+#include <stdio.h>
 
 bool printable_str(const char *buf) {
     const unsigned char *ptr = (const unsigned char *) buf; // Rzutowanie wskaźnika na unsigned char
@@ -10,8 +11,6 @@ bool printable_str(const char *buf) {
     }
     return true; // Jeśli wszystkie znaki są drukowalne, zwraca true
 }
-
-#include <stdio.h>
 
 int main() {
     const char *str1 = "Hello, World!"; // Poprawny łańcuch ASCII
